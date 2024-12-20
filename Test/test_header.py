@@ -1,8 +1,6 @@
-from multiprocessing.dummy import current_process
-
 from playwright.async_api import expect
 from playwright.sync_api import Page
-from playwright.sync_api import Playwright, sync_playwright, expect
+from playwright.sync_api import expect
 
 from conftest import header
 

@@ -1,5 +1,5 @@
-import allure
 from playwright.sync_api import Page
+
 from Data.data import base_url
 
 
