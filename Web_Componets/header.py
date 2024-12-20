@@ -3,7 +3,6 @@ from playwright.sync_api import Page
 from Data.data import base_url
 
 
-@allure.step("Кликаем на кнопку 'Войти'")
 class Header:
     def __init__(self, page: Page):
         self.page = page
@@ -13,3 +12,6 @@ class Header:
 
     def pause(self):
         self.page.pause()
+
+    def click_sign_up(self):
+        self.page.locator('//*[@class="btn btn-outline-light mb-2 me-2 ms-3"][text()="Войти"]').click()
