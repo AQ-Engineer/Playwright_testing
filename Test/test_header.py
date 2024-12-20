@@ -1,18 +1,13 @@
-from multiprocessing.dummy import current_process
-
-from playwright.async_api import expect
 from playwright.sync_api import Page
-from playwright.sync_api import Playwright, sync_playwright, expect
-
-from conftest import header
+from playwright.sync_api import expect
 
 
 def test_opens_page1(header):
     header.open_page()
     # header.pause()
 
-def test_opens_page2(page: Page):
 
+def test_opens_page2(page: Page):
     page.goto("http://tester:dslfjsdfblkhew%40122b1klbfw@testing.misleplav.ru/")
     expect(page.get_by_role("link", name="Войти")).to_be_visible()
     # page.pause()
@@ -23,21 +18,10 @@ def test_opens_page2(page: Page):
     assert page != base_page
 
 
-def test_open_page_pom(header,login):
+def test_open_page_pom(header, login):
     header.open_page()
     header.click_sign_up()
     login.enter_login()
     login.enter_password()
     # header.pause()
     login.sign_up_click()
-
-
-
-
-
-
-
-
-
-
-
