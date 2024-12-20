@@ -1,6 +1,4 @@
 from playwright.sync_api import Page
-from Data.data import valid_login, valid_password
-from playwright.sync_api import Page
 
 from Data.data import valid_login, valid_password
 

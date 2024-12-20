@@ -4,8 +4,8 @@ import allure
 import pytest
 from playwright.sync_api import Page, sync_playwright
 
-from Web_Componets.header import Header
 from Page.login_page import Login
+from Web_Componets.header import Header
 
 
 @pytest.fixture
