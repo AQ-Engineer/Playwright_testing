@@ -1,8 +1,5 @@
-from playwright.async_api import expect
 from playwright.sync_api import Page
 from playwright.sync_api import expect
-
-from conftest import header
 
 
 def test_opens_page1(header):
