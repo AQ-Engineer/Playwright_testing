@@ -1,6 +1,7 @@
-import allure
 from playwright.sync_api import Page
+
 from Data.data import valid_login, valid_password
+
 
 class Login:
     def __init__(self, page: Page):
@@ -14,8 +15,3 @@ class Login:
 
     def sign_up_click(self):
         self.page.get_by_role("button", name="Войти").click()
-
-
-
-
-
